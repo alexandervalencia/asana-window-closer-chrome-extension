@@ -1,5 +1,5 @@
 {
-  "name": "Asana Closer",
+  "name": "Window closer for Asana open-in-desktop-app links",
   "description": "This extension automatically closes the launched window shared Asana links.",
   "version": "1.0",
   "manifest_version": 3,
