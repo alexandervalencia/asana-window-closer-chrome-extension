@@ -8,6 +8,6 @@ loadingObserver.observe(loadingIndicator, { childList: true });
 function onLoadingComplete([mutationRecord]) {
   const [removedNode] = mutationRecord.removedNodes;
   if (removedNode.classList.contains("DesktopRedirectPage-loadingIndicator")) {
-    setTimeout(() => chrome.runtime.sendMessage({}), 6000);
+    setTimeout(() => chrome.runtime.sendMessage({ closeTab: true }), 6000);
   }
 }
